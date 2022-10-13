@@ -1,1 +1,157 @@
-Lessons ☺️
+<!DOCTYPE Html>
+<html>
+
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<title>AAD</title>
+
+
+
+<style>
+
+.toolbar{
+	overflow: hidden;
+	padding: 10px;
+}
+
+.toolbar a {
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	padding: 14px 16px;
+
+}
+
+
+.toolbar a:hover {
+	background-color: #ddd;
+	border: 1px solid cyan;
+}
+
+.toolbar .icon{
+	display: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+.card{
+	width: 50%;
+	background-color: cyan;
+	margin: 10px auto;
+	padding: 5px 10px;
+	display: block;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+	box-shadow: 10px 20px 40px rgba(0,0,0,0.25);
+}
+
+.card:hover {
+	background-color: #ddd;
+	transform: rotate(-2deg);
+}
+
+
+
+@media screen and (max-width: 600px){
+	
+.container .card{
+	background-color: cyan;
+	width: 90%;
+	margin: 10px auto;
+	padding: 5px 10px;
+	display: block;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+	box-shadow: 10px 20px 40px rgba(0,0,0,0.25);
+
+}
+
+.container .card:hover {
+	background-color: #ddd;
+	transform: rotate(-2deg);
+}
+
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+
+
+<!--Container-->
+
+<div class="container">
+
+<!--Toolbar-->
+ 
+<div class="toolbar"> 
+
+<a href="#" class="icon" id="menu" onclick="menuClick()">Menu</a>
+
+<a href="#">Learn</a>
+<a href="#">Example</a>
+<a href="#">Project</a>
+
+
+</div>
+
+
+<!--List-->
+
+
+<div class="card">
+<div class="list0">
+<p><b>Introduction</b></p>
+</div>
+</div>
+
+
+
+<div class="card">
+
+<div class="list1">
+<p><b>Lessons (1)</b></p>
+<p>Hello world!</p>
+</div>
+</div>
+
+
+<div class="card">
+
+<div class="list2">
+<p><b>Lessons (2)</b></p>
+<p>Basic Structure</p>
+</div>
+</div>
+
+
+
+
+
+
+	</div>
+
+
+
+
+	</body>
+
+</html>
